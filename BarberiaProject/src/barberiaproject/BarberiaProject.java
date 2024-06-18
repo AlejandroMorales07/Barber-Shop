@@ -5,17 +5,17 @@
  */
 package barberiaproject;
 
-/**
- *
- * @author usuario
- */
+import Vista.*;
 public class BarberiaProject {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        NewJFrame meth = new NewJFrame();
+        meth.setVisible(true);
     }
+    
+   
     
 }
