@@ -19,7 +19,7 @@ public class ConexionBD {
  
   try{
      Class.forName(driver);
-     conn = DriverManager.getConnection("jdbc:mysql://localhost:127.0.0.1/babershop","root","");
+     conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/babershop","root","");
      if(conn != null){
          System.out.println("Conexion Establecida..");
      }

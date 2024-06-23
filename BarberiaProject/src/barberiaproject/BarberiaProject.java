@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package barberiaproject;
-
+import Modelo.*;
 import Vista.*;
 public class BarberiaProject {
 
@@ -14,6 +14,7 @@ public class BarberiaProject {
     public static void main(String[] args) {
         NewJFrame meth = new NewJFrame();
         meth.setVisible(true);
+       
     }
     
    
