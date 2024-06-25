@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author usuario
@@ -16,6 +18,7 @@ public class ListClient extends javax.swing.JFrame {
      */
     public ListClient() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/LOGO.jpg")).getImage());
         this.setLocationRelativeTo(null);
     }
 
@@ -46,6 +49,11 @@ public class ListClient extends javax.swing.JFrame {
         });
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Cliente:", "1", "2", "3", "4", "5", "6", " " }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -94,6 +102,10 @@ public class ListClient extends javax.swing.JFrame {
         MenuBarber meth=new MenuBarber();
         meth.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments

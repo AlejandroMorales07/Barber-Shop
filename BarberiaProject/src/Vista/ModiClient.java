@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author usuario
@@ -16,6 +18,7 @@ public class ModiClient extends javax.swing.JFrame {
      */
     public ModiClient() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/LOGO.jpg")).getImage());
         this.setLocationRelativeTo(null);
     }
 

@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author usuario
@@ -16,7 +18,7 @@ public class HistoryClient extends javax.swing.JFrame {
      */
     public HistoryClient() {
         initComponents();
-        
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/LOGO.jpg")).getImage());
         this.setLocationRelativeTo(null);
     }
 

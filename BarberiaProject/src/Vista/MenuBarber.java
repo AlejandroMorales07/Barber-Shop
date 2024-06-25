@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author usuario
@@ -13,6 +15,7 @@ public class MenuBarber extends javax.swing.JFrame {
 
     public MenuBarber() {
         initComponents();
+        setIconImage(new ImageIcon(getClass().getResource("/Imagenes/LOGO.jpg")).getImage());
         this.setLocationRelativeTo(null);
     }
 
