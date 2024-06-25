@@ -5,6 +5,8 @@
  */
 package Vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author usuario
@@ -16,7 +18,8 @@ public class NewJFrame extends javax.swing.JFrame {
      */
     public NewJFrame() {
         initComponents();
-        
+        this.setLocationRelativeTo(null);
+        MenuBarber meth1 = new MenuBarber();
     }
 
     /**
@@ -30,13 +33,12 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
+        ContraseñaAd = new javax.swing.JTextField();
+        UsuarioAd = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -45,53 +47,68 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(204, 204, 204));
         jLabel1.setFont(new java.awt.Font("Monotype Corsiva", 1, 48)); // NOI18N
-        jLabel1.setText("Barber Shop");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, 248, 105));
+        jLabel1.setText("¡¡Welcome to Barber Shop!!");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 100, 560, 90));
 
-        jLabel2.setFont(new java.awt.Font("Monotype Corsiva", 1, 36)); // NOI18N
-        jLabel2.setText("Login up");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 160, 157, -1));
+        jLabel3.setFont(new java.awt.Font("Agency FB", 0, 36)); // NOI18N
+        jLabel3.setText("User:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 160, 40));
 
-        jLabel3.setFont(new java.awt.Font("Monotype Corsiva", 0, 24)); // NOI18N
-        jLabel3.setText("Usuario: ");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, -1, -1));
+        jLabel4.setFont(new java.awt.Font("Agency FB", 0, 36)); // NOI18N
+        jLabel4.setText("Password:");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 180, 40));
 
-        jLabel4.setFont(new java.awt.Font("Monotype Corsiva", 0, 24)); // NOI18N
-        jLabel4.setText("Contraseña: ");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 330, -1, -1));
-
-        jButton1.setFont(new java.awt.Font("Monotype Corsiva", 1, 24)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Agency FB", 1, 24)); // NOI18N
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 400, 153, 54));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 390, 190, 60));
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        ContraseñaAd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                ContraseñaAdActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 265, -1));
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 330, 265, -1));
+        jPanel1.add(ContraseñaAd, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 300, 40));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Imagen de WhatsApp 2024-06-17 a las 21.40.38_086eeb72.jpg"))); // NOI18N
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1070, 650));
+        UsuarioAd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                UsuarioAdActionPerformed(evt);
+            }
+        });
+        jPanel1.add(UsuarioAd, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, 300, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 6, 1070, 640));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Imagen de WhatsApp 2024-06-17 a las 21.40.38_086eeb72.jpg"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1090, 650));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, -4, 1090, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+     String UsuarioA = UsuarioAd.getText();
+     String ContraseñaA = ContraseñaAd.getText();
+     
+        if(UsuarioA.equals("BarberAdmin") && ContraseñaA.equals("BarberPass123")) {
+            MenuBarber meth1 = new MenuBarber();
+            setVisible(false);
+            meth1.setVisible(true);
+            JOptionPane.showMessageDialog(null,"BIENVENIDO BARBERO");
+        }else{JOptionPane.showMessageDialog(null,"ERROR AL INGRESAR, VERIFICA LA INFORMACIÓN","ERROR",JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void ContraseñaAdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraseñaAdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_ContraseñaAdActionPerformed
+
+    private void UsuarioAdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsuarioAdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_UsuarioAdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -129,14 +146,13 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField ContraseñaAd;
+    private javax.swing.JTextField UsuarioAd;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }
